@@ -1,0 +1,26 @@
+Class 01: Assignment #2
+Given the 2 following directory structures, what would be the list of terminal commands in order to create it:
+First One
+~/Sites/my-awesome-directory/nested-directory
+~/Sites/my-awesome-directory/nested-directory/hello.txt
+~/Sites/terminals-are-fun.txt
+
+	1. cd c:/users/jls2245
+	2. mkdir –p ./Sites/my-awesome-directory/nested-directory
+	3. cd ./Sites/my-awesome-directory/nested-directory
+	4. touch hello.txt
+	5. cd ../..
+	6. touch terminals-are-fun.txt
+
+Second One
+~/Sites/1/2/3/4/5/6/7/8/9/hello/its/me/adele.jpg
+~/Sites/i/was/wondering/if/after/all/these/years/you world/like/to/meet.jpg
+
+	1. cd c:/users/jls2245/Sites
+	2. mkdir –p  1/2/3/4/5/6/7/8/9/hello/its/me
+	3. cd ./1/2/3/4/5/6/7/8/9/hello/its/me
+	4. touch adele.jpg
+	5. cd c:/user/jls2245/Sites
+	6. mkdir –p i/was/wondering/if/after/all/these/years/you world[sic]/like/to
+	7. cd ./i/was/wondering/if/after/all/these/years/you world[sic]/like/to
+	8. touch meet.jpg
