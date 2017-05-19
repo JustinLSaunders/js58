@@ -19,4 +19,3 @@ if (apt == 2) {var address = streetNumber + " " + street + ", Apt. " + aptNumber
 } else if (apt == 1) {var address = streetNumber + " " + street + ", " + city + ", " + state + ", " + zip;}
 
 console.log(address);
-console.log(apt);
