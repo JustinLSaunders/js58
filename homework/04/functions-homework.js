@@ -6,39 +6,67 @@ function largestValue(array) {
     sortedList.push(array[i]); //If I declared sortedList = array above and did not take this step, after I run this function, numberList becomes identical to sortedList, and I want it to remain static in global scope for the following functions.
   };
   sortedList.sort((function(a, b){return b - a})); //Without this function, numbers look like strings, and the ascending order (using {return a - b}) is 1, 2, 20, 3, 5, 7, 90. Weird. I have no idea why this works. {return b-a} puts it in descending order.
-  // return(sortedList[0]);
   return(sortedList[0]);
 };
 
 console.log(largestValue(numberList));
 
 function inArray(array, number){
-  for (var i = 0; i < array.length; i++){
+  for (var i = 0; i <= array.length; i++){
     if (array[i] == number){
       return(true);
     }
   }
 };
   
-if(inArray(numberList, 3)){
+if(inArray(numberList, 43)){
   console.log("That number is present.");
 } else {
   console.log("Nope. It's not there.")
 }
-// console.log(numberList[3]);
-// console.log(numberList.indexOf(90) % 2 == 0);
 
 
 function oddPositions(array) {
-  var i = 0;
-  while(i <= largestValue(array)) {
-    if (array.indexOf(i) % 2 == 0) {
-      i++;
-    } else if ((array.indexOf(i))  % 2 != 0) {
-    return(i);
-    i++;
-    } 
+  for(var i = 0; i <= largestValue(array); i++) { //Because of the way this iterates through number values, it returns the numbers in the odd positions sorted by value, not sorted by their sequence in the array. It also will not return duplicates, nor an odd-positioned number if it occurs earlier in the array in an even position.
+    if (inArray(array, i) && array.indexOf(i) % 2 != 0) {
+      console.log(i); //I used console.log instead of return, so I don't short circuit the loop.
+    }
   }
 };
 
-console.log(oddPositions(numberList));
+oddPositions(numberList);
+
+function arraySum(array) {
+  var sum = 0;
+  var sumArray = [];
+  for (var i = 0; i <= array.length - 1; i++){
+    if (array.indexOf(array[i]) <= array.length - 1){
+      sum = sum + array[i];
+      sumArray.push(sum);
+    }
+  }
+  return(sumArray[sumArray.length - 1]);
+};
+
+console.log(arraySum(numberList));
+
+function palCheck(string) {
+  // var i = 0;
+  var userInput = string;
+  var i = 0;
+  var n = userInput.length - 1;
+  while(i != n) {
+    if (userInput.charAt(i) == userInput.charAt(n)){
+    i++;
+    n--;
+    }
+  }  
+}
+  return(true);
+}
+
+if(palCheck("car")){
+  console.log("That's a palindrome.");
+} else {
+  console.log("Nope.");
+}
