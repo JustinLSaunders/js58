@@ -67,7 +67,7 @@ function palCheck(string) {
     }
 }
 
-if(palCheck("I")){
+if(palCheck("amanaplanacanalpanama")){
   console.log("That is a palindrome.");
 } else {
   console.log("Why would you think that's a palindrome?")
