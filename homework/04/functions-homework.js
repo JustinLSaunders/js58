@@ -29,7 +29,7 @@ if(inArray(numberList, 43)){
 function oddPositions(array) {
   for(var i = 0; i <= largestValue(array); i++) { //Because of the way this iterates through number values, it returns the numbers in the odd positions sorted by value, not sorted by their sequence in the array. It also will not return duplicates, nor an odd-positioned number if it occurs earlier in the array in an even position.
     if (inArray(array, i) && array.indexOf(i) % 2 != 0) {
-      console.log(i); //I used console.log instead of return, so I don't short circuit the loop.
+      console.log(i); //I use console.log instead of return, so I don't short circuit the loop.
     }
   }
 };
@@ -51,21 +51,24 @@ function arraySum(array) {
 console.log(arraySum(numberList));
 
 function palCheck(string) {
-  // var i = 0;
+
   var userInput = string;
   var i = 0;
   var n = userInput.length - 1;
-  while(i != n) {
-    if (userInput.charAt(i) == userInput.charAt(n)){
+
+  while(i <= n) {
     i++;
     n--;
+  }
+    if(userInput.charAt(i) == userInput.charAt(n)) {
+      return(true);
+    } else {
+      return(false);
     }
-    return(true);
-  }  
 }
 
-if(palCheck("car")){
-  console.log("That's a palindrome.");
+if(palCheck("I")){
+  console.log("That is a palindrome.");
 } else {
-  console.log("Nope.");
+  console.log("Why would you think that's a palindrome?")
 }
