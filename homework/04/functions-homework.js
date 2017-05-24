@@ -60,9 +60,8 @@ function palCheck(string) {
     i++;
     n--;
     }
+    return(true);
   }  
-}
-  return(true);
 }
 
 if(palCheck("car")){
