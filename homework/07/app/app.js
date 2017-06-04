@@ -7,7 +7,6 @@ window.onload = function() {
     event.preventDefault();
 
     var getOldList = document.querySelector("ol");
-
     if (getOldList != null) {
       var oldList = document.getElementById("fizzbuzz_list");
       form.removeChild(oldList)
@@ -15,7 +14,6 @@ window.onload = function() {
 
     var userInput = document.getElementById("user-input").value;
     var userInputParse = Number.parseInt(userInput);
-
     var fizzbuzzList = document.createElement("ol");
     form.appendChild(fizzbuzzList);
     fizzbuzzList.setAttribute("id", "fizzbuzz_list");
