@@ -1,0 +1,14 @@
+body{
+  text-align: center;
+}
+
+h1{
+  font-size: 3rem;
+  color: blue;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+button, form{
+  margin: 10px 0;
+}

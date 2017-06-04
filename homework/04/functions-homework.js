@@ -60,14 +60,15 @@ function palCheck(string) {
     i++;
     n--;
   }
-    if(userInput.charAt(i) == userInput.charAt(n)) {
-      return(true);
-    } else {
-      return(false);
-    }
+
+  if(userInput.charAt(i) == userInput.charAt(n)) {
+    return(true);
+  } else {
+    return(false);
+  }
 }
 
-if(palCheck("amanaplanacanalpanama")){
+if(palCheck("8tB505t8")){
   console.log("That is a palindrome.");
 } else {
   console.log("Why would you think that's a palindrome?")
