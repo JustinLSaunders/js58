@@ -6,7 +6,7 @@ window.onload = function() {
 
     event.preventDefault();
 
-    var getOldList = document.querySelector("ol");
+    var getOldList = document.getElementById("fizzbuzz_list");
     if (getOldList != null) {
       var oldList = document.getElementById("fizzbuzz_list");
       form.removeChild(oldList)
