@@ -1,7 +1,7 @@
 window.onload = function() {
   var form = document.getElementById("fizzbuzz_form");
   var button = document.getElementById("go-button");
-      
+
   button.onclick = function fizzbuzz(){
 
     event.preventDefault();
@@ -26,7 +26,7 @@ window.onload = function() {
       fizzbuzzLi.appendChild(fbText);
     };
 
-    for(var i = 1; i <= userInputParse ; i++){
+    for(var i = 1; i <= userInputParse; i++){
       if (i % 3 == 0 && i % 5 == 0) {
         fizzbuzzCreate(" FizzBuzz", "fizzbuzz_item");
       } else if (i % 3 == 0) {
