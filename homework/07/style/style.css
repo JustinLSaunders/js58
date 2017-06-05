@@ -7,12 +7,12 @@ li{
   padding: 3px;
 }
 
-.buzz_item{
-  background-color: rgba(0, 0, 225, 0.25);
+.fizz_item{
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
-.fizz_item{
-  background-color: rgba(255, 0, 0, 0.25);
+.buzz_item{
+  background-color: rgba(0, 0, 225, 0.15);
 }
 
 .fizzbuzz_item{
