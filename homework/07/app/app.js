@@ -18,31 +18,23 @@ window.onload = function() {
     form.appendChild(fizzbuzzList);
     fizzbuzzList.setAttribute("id", "fizzbuzz_list");
 
+    function fizzbuzzCreate(text, className){
+      var fizzbuzzLi = document.createElement("li");
+      fizzbuzzLi.setAttribute("class", className);
+      var fbText = document.createTextNode(i + " " + text);
+      fizzbuzzList.appendChild(fizzbuzzLi);
+      fizzbuzzLi.appendChild(fbText);
+    }
+
     for(var i = 1; i <= userInputParse ; i++){
       if (i % 3 == 0 && i % 5 == 0) {
-        var fizzbuzzLi = document.createElement("li");
-        fizzbuzzLi.setAttribute("class", "fizzbuzz_item");
-        var fbText = document.createTextNode(i + " FizzBuzz");
-        fizzbuzzList.appendChild(fizzbuzzLi);
-        fizzbuzzLi.appendChild(fbText);
+        fizzbuzzCreate("FizzBuzz", "fizzbuzz_item");
       } else if (i % 3 == 0) {
-        var fizzbuzzLi = document.createElement("li");
-        fizzbuzzLi.setAttribute("class", "fizz_item");
-        var fText = document.createTextNode(i + " Fizz");
-        fizzbuzzList.appendChild(fizzbuzzLi);
-        fizzbuzzLi.appendChild(fText);
+        fizzbuzzCreate("Fizz", "fizz_item");
       } else if (i % 5 == 0) {
-        var fizzbuzzLi = document.createElement("li");
-        fizzbuzzLi.setAttribute("class", "buzz_item");
-        var bText = document.createTextNode(i + " Buzz");
-        fizzbuzzList.appendChild(fizzbuzzLi);
-        fizzbuzzLi.appendChild(bText);
+        fizzbuzzCreate("Buzz", "buzz_item");
       } else {
-        var fizzbuzzLi = document.createElement("li");
-        fizzbuzzLi.setAttribute("class", "null_item");
-        var number = document.createTextNode(i);
-        fizzbuzzList.appendChild(fizzbuzzLi);
-        fizzbuzzLi.appendChild(number);
+        fizzbuzzCreate("");
       };
     }
   };
