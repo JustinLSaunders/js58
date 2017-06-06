@@ -1,0 +1,14 @@
+div.button{
+  border: solid 2px black;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.orange{
+  background-color: orange;
+}

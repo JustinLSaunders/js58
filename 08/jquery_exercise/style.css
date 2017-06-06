@@ -1,0 +1,15 @@
+#name {
+  color: blue;
+}
+
+.strikethrough{
+  text-decoration: line-through;
+}
+
+.btn{
+  margin-left: 8px;
+}
+
+li{
+  padding-top: 8px;
+}
