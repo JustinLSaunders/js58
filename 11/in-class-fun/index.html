@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All The Apps</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="video.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>Welcome to our app</h1>
+      </div>
+    </div>
+
+    <div class="row row-eq-height">
+
+      <div class="weather col-xs-12 col-md-4">
+        <h2>Get the weather in<span id="location">&hellip;</span></h2>
+        <input type="text" id="longitude" placeholder="Enter in a longitude" name="">
+        <input type="text" id="latitude" placeholder="Enter in a latitude" name="">
+        <button id="get-weather" class="btn btn-primary">Get the weather</button>
+        <marquee id="loading-marquee" scrollamount="30">loading...</marquee>
+
+        <div class="panel">
+          <div class="panel-body">
+            <p>Current Temperature: <span id="current-temp"></span></p>
+            <p>Current Humidity: <span id="current-humidity"></span></p>
+            <p>Current Wind: <span id="current-wind"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video col-xs-12 col-md-4">
+        <h2>Random Video</h2>
+        <button id="random-video-btn" class="btn btn-default">Go!</button>
+        <div class="video-container" id="random-video">
+          <span id="video-placeholder">Video Placeholder</span>
+        </div>
+        <input type="text" id="random-video-id" placeholder="video ID">
+        <button id="add-video" class="btn btn-primary">Add to Pool</button>
+      </div>
+
+        <!--  1. Make a button with the text "Risk It"
+              2. When the button is clicked, start a random timer
+              3. After the timer has lapsed, display a gigantic kitten on the page -->
+      <div class="jump-scare col-xs-12 col-md-4">
+        <h2>Jump Scare</h2>
+        <button class="btn btn-danger">Risk It!</button>
+        <div id="scare-timer"></div>
+        <div id="kitten"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
