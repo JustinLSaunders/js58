@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f17eafc3-16d0-4443-8035-ba161d20cffc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/11/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/11/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/11/jumpscare.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/11/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/11/video.js" />
-    </list>
+    <list default="true" id="f17eafc3-16d0-4443-8035-ba161d20cffc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -113,9 +107,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="134" />
-    <option name="y" value="74" />
+    <option name="y" value="150" />
     <option name="width" value="1435" />
-    <option name="height" value="977" />
+    <option name="height" value="901" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -309,15 +303,15 @@
       <option name="presentableId" value="Default" />
       <updated>1497548050028</updated>
       <workItem from="1497548051411" duration="614000" />
-      <workItem from="1497894959865" duration="5965000" />
+      <workItem from="1497894959865" duration="7138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6579000" />
+    <option name="totallyTimeSpent" value="7752000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="74" width="1435" height="977" extended-state="0" />
+    <frame x="134" y="150" width="1435" height="901" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.165625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
