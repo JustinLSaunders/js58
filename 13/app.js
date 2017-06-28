@@ -34,7 +34,7 @@ $('#dropdown').change(function(){
         $('.article-list').append(newRow);
         $('#article-row' + i).append(imgContainer, articleContainer);
         $('#img-container' + i).append('<a href="' + url + '" target="_blank"><img alt="" class="article-img" src="' + img + '"></a>')
-        $('#article-container' + i).append('<a href="' + url + '" target="_blank"><h3>' + title + '</h3></a><p>' + description + '</p>');
+        $('#article-container' + i).append('<h3><a href="' + url + '" target="_blank"><h3>' + title + '</a></h3><p>' + description + '</p>');
       }
       $("#dropdown").val($("#dropdown option:first").val());
     });
