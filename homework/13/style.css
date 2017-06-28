@@ -1,0 +1,15 @@
+img.article-img{
+  border-radius: 20px;
+  width: 100%;
+  border: solid 3px #337ab7;
+  margin-top: 20px;
+}
+
+img.article-img:hover{
+  border: solid 3px #23527c;
+  box-shadow: 2px 2px 2px #545454;
+}
+
+#loader{
+  display: none;
+}

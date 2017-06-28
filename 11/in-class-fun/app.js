@@ -2,7 +2,7 @@
 
 $(function(){
   var loading = $('#loading-marquee');
-  $(loading).hide();
+  // $(loading).hide();
 
   // $('#loading-marquee').hide();
   $('#get-weather').on('click', function(event){

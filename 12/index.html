@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced APIs Lesson</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="/styles.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+
+  <header class="container-fluid text-center">
+    <h1>Local<span>Landscapes</span></h1>
+  </header>
+
+  <div class="container-fluid sign-in-view">
+    <div class="row text-center">
+      <h3>Discover how beautiful your surroundings can be</h3>
+      <button id="login" class="btn btn-default">
+        <a href="#">Login to 500px</a>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center image-results-view">
+    <h3>Here are some landscape photos from 500px near you:</h3>
+    <div class="images"></div>
+  </div>
+
+  <!-- js -->
+  <script src="/500px.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
+<!-- Add a button to the page that when clicked, uses the browsers current location for searching 500px and loads the photos.
+
+Add an input box for a user to type in a latitude and longitude in the format of "42.0,42.0" and use that to search 500px and display the photos
+
+When the photos are being loaded (they have not loaded yet), display a "Loading..." somewhere on the page that disappears when the photos have loaded. -->
