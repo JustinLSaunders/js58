@@ -32,12 +32,15 @@ $(function(){
     console.log(snapshot.val());
 
     snapshot.forEach(function(listItem){
-      var item = listItem.val().value;
-      list.append('<li data-id="' + listItem.key +'">' + item + ' <a href="#">Remove</a></li>');
+      var item = listItem.description.val().value;
+      list.append('<li data-id="' + listItem.key +'">' + item + ' <a href="#" class="remove">Remove</a></li>');
     })
   })
 
+  // add an event listener for every a tag inside of a li tag in our list
   $('#list-items').on('click', 'li a', function(){
+    // retrieve the value of the 'data-id' attribute on the parent <li> element
+    // so we can remove it from firebase
     var itemId = $(this).parent().data('id');
     database.ref("/todo-items/" + itemId).remove();
   });
