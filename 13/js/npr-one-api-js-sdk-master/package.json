@@ -90,7 +90,7 @@
     "shared-git-hooks": "1.2.1",
     "sinon": "1.17.5",
     "sinon-chai": "2.8.0",
-    "webpack": "1.13.1"
+    "webpack": "5.94.0"
   },
   "engines": {
     "node": ">= 0.12",
